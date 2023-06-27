@@ -10,8 +10,9 @@ import (
 )
 
 var (
-	_connection *mongo.Client
-	_dbSettings map[string]interface{}
+	_connection      *mongo.Client
+	_dbSettings      map[string]interface{}
+	_usersCollection *mongo.Collection
 )
 
 func Initialize(dbSettings map[string]interface{}) {
