@@ -1,0 +1,18 @@
+server:
+  config:
+    appname: "EzeKod"
+    enableprintroutes: true
+    prefork: false
+    serverheader: "EzeKod V1"
+    host: "127.0.0.1"
+    port: "3001"
+  routes:
+    - method: GET
+      path: /
+    - method: POST
+      path: /
+database:
+  driver: mongodb
+  host: localhost
+  port: "27017"
+  db: "EzeKod"
